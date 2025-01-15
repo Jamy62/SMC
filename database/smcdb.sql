@@ -218,7 +218,7 @@ CREATE TABLE `membertb` (
 --
 
 INSERT INTO `membertb` (`MemberID`, `MemberFirstName`, `MemberLastName`, `MemberUserName`, `MemberEmail`, `MemberPh`, `MemberPassword`, `MemberRegisterMonth`, `MemberProfile`, `MemberAddress`) VALUES
-(1, 'Jamy', 'Olive', 'Jamy234', 'jamy12ll@gmail.com', '0974637464', 'Jamy123!@#', 'January', 'img/_p10.png', 'No 163 Ahlone Road\r\nAhlone township'),
+(1, 'Jamy', 'Olive', 'Jamy234', 'jamy12ll@gmail.com', '0974637464', 'Jamy12321!@$3', 'January', 'img/_p10.png', 'No 23 Ahlone Road\r\nAhlone township'),
 (2, 'Aurelia', 'Montgomery', 'AureliaM', 'aureliaM23@gmail.com', '0967547754', 'Aurelia@#233%g', 'January', 'img/_p1.png', '23 Main St, Cityville'),
 (3, 'Zephyr', 'Rodriguez', 'ZephyrR43', 'zephyrrodriguez76@gmail.com', '09645643554', 'Zephye614@@f', 'January', 'img/_p2.png', '456 Sunset Blvd, Coral Springs'),
 (4, 'Seraphina', 'Chang', 'SeraphinaC54337', 'Sera354@gmail.com', '09274572636', 'Sera!@$rfgfT^54', 'January', 'img/_p3.png', ' 789 Azure Ave, Oceanview'),
