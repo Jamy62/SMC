@@ -1,0 +1,613 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar 
+{ 
+    display: none;
+}
+
+.sideBar 
+{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #564EEF;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    grid-area: menu;
+    overflow: auto;
+}
+
+.sideBar::-webkit-scrollbar 
+{ 
+    display: none;
+}
+
+.sideBar ul 
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+.sideBar li
+{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-left: -20px;
+    margin-right: -19px;
+    text-align: left;
+    background-color: #564EEE;
+}
+
+.sideBar li:hover
+{
+    background-color: #565EEE;
+}
+
+.sideBar li a 
+{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.mainContent 
+{
+    margin-left: 200px;
+    padding: 20px;
+    background-color:rgb(234, 243, 500);
+}
+
+header 
+{
+    display: inline-block;
+    position: sticky;
+    top: 0px; // Change this value to adjust the scroll threshold
+    left: 0;
+    width: 100%;
+    padding: 27px;
+    margin: -20px;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 1px 1px 3px 1px lightgray;
+}
+
+#logo img
+{
+    float: left;
+    width: 123px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: -5px;
+    margin: -27px;
+}
+
+.profilePic
+{
+    float: right;
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+    margin-top: -12px;
+}
+
+#adminPanel
+{
+    padding-bottom: 10px;
+    padding-left: 7px;
+    color: white;
+}
+
+#currentPage
+{
+    background-color: #566EEE;
+}
+
+#blueBack 
+{
+    background: linear-gradient(90deg, rgba(213,213,240,1) 0%, rgba(156,183,255,1) 0%);
+}
+
+.left .title{
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+}
+ 
+.left .title li{
+    color:#487573;
+    list-style-type:none;
+}
+ 
+.left .title li a {
+    color:#345b60;
+    pointer-events: none;
+    text-decoration:none;
+}
+
+.headTitle 
+{
+   display: flex;
+}
+
+.headTitle h1 
+{
+    margin-left: 38px;
+}
+
+/*---------Admin Register-------------*/
+
+#adminRegisterBody 
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: rgb(213,213,240);
+    background: linear-gradient(90deg, rgba(213,213,240,0.8352591036414566) 0%, rgba(178,173,255,0.7372198879551821) 0%, rgba(0,212,255,1) 100%);
+}
+
+#registerLogo
+{
+    margin-top: -20px;
+    width: 60%;
+}
+
+#logoContainer 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.registerContainer 
+{
+    width: 400px;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#adminRegister label 
+{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registerInfo 
+{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.registerSubmit
+{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #0078d7;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.registerSubmit:hover 
+{
+    background-color: #005999;
+}
+
+#adminRegister p 
+{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#adminRegister a 
+{
+    color: #0078d7;
+    text-decoration: none;
+}
+
+#adminRegister a:hover 
+{
+    text-decoration: underline;
+}
+
+/*---------Admin Login-------------*/
+
+#adminLoginBody 
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: rgb(213,213,240);
+    background: linear-gradient(90deg, rgba(213,213,240,0.8352591036414566) 0%, rgba(178,173,255,0.7372198879551821) 0%, rgba(0,212,255,1) 100%);
+}
+
+#loginLogo
+{
+    margin-top: -20px;
+    width: 60%;
+}
+
+#logoContainer 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.loginContainer 
+{
+    width: 400px;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#adminLogin label 
+{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.loginInfo 
+{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.loginSubmit
+{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #0078d7;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.loginSubmit:hover 
+{
+    background-color: #005999;
+}
+
+#adminLogin p 
+{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+#adminLogin a 
+{
+    color: #0078d7;
+    text-decoration: none;
+}
+
+#adminLogin a:hover 
+{
+    text-decoration: underline;
+}
+
+/*---------Admin Dashboard-------------*/
+
+.dashBoxes
+{
+    padding: 3em 0 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-gap: 2em;
+}
+        
+.dashBox
+{
+    background: #fff;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 3em;
+    border: 1px solid #ede8f0;
+    border-radius: 5px;
+}
+            
+.dashBoxIcon i
+{
+    display: block;
+    font-size: 45px;
+}
+            
+.dashBoxContent
+{          
+    padding-left: 1.25em;
+    white-space: nowrap;
+}
+
+.bigNumber 
+{
+    display: block;
+    font-size: 2em;
+    line-height: 150%;
+    color: #1b253d;
+}
+
+.left h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color:#82a8be;
+}
+
+/*---------Content Add-------------*/
+
+.formAddContainer 
+{
+    width: 300px;
+    padding: 16px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.formAddTitle 
+{
+    text-align: center;
+}
+
+.formAddLabel 
+{
+    display: block;
+    margin-top: 10px;
+}
+
+.formAddInput 
+{
+    width: 94%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.formAddArea 
+{
+    width: 94%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+}
+
+.formAddSubmit 
+{
+    background-color: #0078d7;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.formAddSubmit:hover 
+{
+    background-color: #005999;
+}
+
+/*---------Content Update-------------*/
+
+.formUpdateContainer
+{
+    width: 300px;
+    padding: 16px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.formUpdateTitle 
+{
+    text-align: center;
+}
+
+.formUpdateLabel 
+{
+    display: block;
+    margin-top: 10px;
+}
+
+.formUpdateInput 
+{
+    width: 94%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.formUpdateArea 
+{
+    width: 94%;
+    padding: 8px;
+    margin-top: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+}
+
+.formUpdateSubmit 
+{
+    background-color: #0078d7;
+    color: white;
+    padding: 8px 16px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.formUpdateSubmit:hover 
+{
+    background-color: #005999;
+}
+
+/*---------Media Add/Update-------------*/
+
+.rating 
+{
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+}
+
+.rating input
+{
+    display: none;
+}
+
+.rating label:before
+{
+    content: "\2605";
+}
+
+input:checked ~ label
+{
+    color: orange;
+}
+
+.rating label
+{
+    cursor: pointer;
+    padding: 5px;
+    font-size: 30px;
+}
+
+/*---------Listing-------------*/
+
+.tabs 
+{
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tabButton 
+{
+    background-color: #f4f4f4;
+    color: darkgray;
+    border: none;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+.tabButton:hover 
+{
+  background-color: blue;
+  color: white;
+}
+
+.tabButton.active 
+{
+  background-color: royalblue;
+  color: white;
+}
+
+.tabContent 
+{
+  padding: 15px;
+  display: none;
+}
+
+.tabContent.active 
+{
+  display: block;
+}
+
+.listingTitle
+{
+    margin-bottom: -2px;
+    margin-left: 4px;
+}
+
+.listingTable 
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5px;H
+}
+
+.listingTable th, .listingTable td 
+{
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.listingTable th 
+{
+    background-color: #565EEE;
+    color: white;
+    font-weight: bold;
+}
+
+.listingTable tr:nth-child(even) 
+{
+    background-color: #f2f2f2;
+}
+
+.listingTable tr:nth-child(odd) 
+{
+    background-color: #ddd;
+}
+
+.listingTable tr:hover 
+{
+    background-color: #ccc;
+}
+
+.listingTable td a 
+{
+    color: blue;
+    text-decoration: none;
+}
+
+.listingTable td a:hover 
+{
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.scrollContainer 
+{
+    width: 97%;
+    overflow-x: auto;
+}
+
+.scroll 
+{
+    white-space: nowrap;
+}
+
+
+
